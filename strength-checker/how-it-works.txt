@@ -1,0 +1,11 @@
+A Go program that checks password strength takes a password input from the user and evaluates it based on criteria such as length, presence of uppercase and lowercase letters, numbers, and special characters. It then classifies the password as Weak, Moderate, or Strong, helping users create more secure passwords for better protection against hacking or unauthorized access.
+
+
+
+
+
+
+
+
+
+

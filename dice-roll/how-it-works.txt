@@ -1,0 +1,1 @@
+A Go program that rolls n number of dice takes an integer input from the user representing how many dice they want to roll. It then generates a random number between 1 and 6 for each die and displays the result for every roll. This program uses Go's random number generator (math/rand) to simulate dice rolls, making it useful for games, simulations, or probability experiments.
