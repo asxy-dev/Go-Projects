@@ -1,4 +1,4 @@
-<h1 align="center">🚀 Go-Projects – 50 Days of Go! 🏆</h1>
+<h1 align="center">Go-Projects – 50 Days of Go! </h1>
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/ashleymcnamara/gophers/master/GOPHER_MIC_DROP.png" width="350">
@@ -19,21 +19,21 @@
 <table>
 <tr>
 <td align="center" width="200px">
-<h3>📌 Calculator</h3>
+<h3>Calculator</h3>
 <a href="./calculator">
 <img src="https://img.shields.io/badge/View-Project-blue?style=for-the-badge">
 </a>
 </td>
 
 <td align="center" width="200px">
-<h3>🛡 Censor Word</h3>
+<h3>Censor Word</h3>
 <a href="./censor-word">
 <img src="https://img.shields.io/badge/View-Project-blue?style=for-the-badge">
 </a>
 </td>
 
 <td align="center" width="200px">
-<h3>🎲 Dice Roll</h3>
+<h3>Dice Roll</h3>
 <a href="./dice-roll">
 <img src="https://img.shields.io/badge/View-Project-blue?style=for-the-badge">
 </a>
@@ -42,21 +42,21 @@
 
 <tr>
 <td align="center">
-<h3>💰 Expenses</h3>
+<h3>Expenses</h3>
 <a href="./expenses">
 <img src="https://img.shields.io/badge/View-Project-blue?style=for-the-badge">
 </a>
 </td>
 
 <td align="center">
-<h3>📂 File Manager</h3>
+<h3>File Manager</h3>
 <a href="./file-manager">
 <img src="https://img.shields.io/badge/View-Project-blue?style=for-the-badge">
 </a>
 </td>
 
 <td align="center">
-<h3>✨ Patterns</h3>
+<h3>Patterns</h3>
 <a href="./patterns">
 <img src="https://img.shields.io/badge/View-Project-blue?style=for-the-badge">
 </a>
@@ -65,21 +65,21 @@
 
 <tr>
 <td align="center">
-<h3>🔐 Strength Checker</h3>
+<h3>Strength Checker</h3>
 <a href="./strength-checker">
 <img src="https://img.shields.io/badge/View-Project-blue?style=for-the-badge">
 </a>
 </td>
 
 <td align="center">
-<h3>📝 To-Do List</h3>
+<h3>To-Do List</h3>
 <a href="./to-do-list">
 <img src="https://img.shields.io/badge/View-Project-blue?style=for-the-badge">
 </a>
 </td>
 
 <td align="center">
-<h3>✅ User Validator</h3>
+<h3>User Validator</h3>
 <a href="./user-validator">
 <img src="https://img.shields.io/badge/View-Project-blue?style=for-the-badge">
 </a>
