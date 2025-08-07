@@ -84,7 +84,7 @@
 <img src="https://img.shields.io/badge/View-Project-blue?style=for-the-badge">
 </a>
 </td>
-
+<br>
 <td align="center">
 <h3>RPS Game</h3>
 <a href="./rock-paper-scissor">
