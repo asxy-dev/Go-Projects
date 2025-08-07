@@ -12,64 +12,105 @@ import (
 )
 
 func main() {
-	var x string="y"
+	var x string = "y"
 	for x == "y" {
 		z := []string{"rock", "paper", "scissor"}
-		fmt.Println("Chose the game schematics: \n 1. Player VS Player \n 2. PLayer VS Computer")
-		fmt.Printf("-> ")
+		fmt.Println("Choose the game mode:\n 1. Player vs Player\n 2. Player vs Computer")
+		fmt.Print("-> ")
 		var schem int
 		fmt.Scanln(&schem)
+
 		switch schem {
 		case 2:
 			rand.Seed(time.Now().UnixNano())
 			comp := z[rand.Intn(len(z))]
-			fmt.Println("Enter your choice (rock/paper/scissor): ")
+			fmt.Print("Enter your name (leave blank for Player): ")
+			var name string
+			fmt.Scanln(&name)
+			if name == "" {
+				name = "Player"
+			}
+			fmt.Print("Enter your choice (rock/paper/scissor): ")
 			var choice string
 			fmt.Scanln(&choice)
 			choice = strings.ToLower(choice)
 			if comp == choice {
-				fmt.Printf("User : %s \n Computer : %s \n Match Draw!", choice, comp)
-			} else if comp == "rock" && choice == "paper" {
-				fmt.Printf("User : %s \n Computer : %s \n Player Won!", choice, comp)
-			} else if comp == "paper" && choice == "rock" {
-				fmt.Printf("User : %s \n Computer : %s \n Computer Won!", choice, comp)
-			} else if comp == "rock" && choice == "scissor" {
-				fmt.Printf("User : %s \n Computer : %s \n Computer Won!", choice, comp)
-			} else if comp == "scissor" && choice == "rock" {
-				fmt.Printf("User : %s \n Computer : %s \n Player Won!", choice, comp)
-			} else if comp == "paper" && choice == "scissor" {
-				fmt.Printf("User : %s \n Computer : %s \n Player Won!", choice, comp)
-			} else if comp == "scissor" && choice == "paper" {
-				fmt.Printf("User : %s \n Computer : %s \n Computer Won!", choice, comp)
+				fmt.Printf("%s: %s | Computer: %s\nResult: Draw 🤝\n", name, choice, comp)
+			} else if comp == "rock" && choice == "paper" || comp == "paper" && choice == "scissor" || comp == "scissor" && choice == "rock" {
+				fmt.Printf("%s: %s | Computer: %s\nResult: %s Won 🎉\n", name, choice, comp, name)
+			} else {
+				fmt.Printf("%s: %s | Computer: %s\nResult: Computer Won 💻\n", name, choice, comp)
 			}
+
 		case 1:
-			fmt.Println("Player1 (rock/paper/scissor): ")
-			var p1 string
-			fmt.Scanln(&p1)
-			fmt.Println("Player2 (rock/paper/scissor): ")
-			var p2 string
-			fmt.Scanln(&p2)
-			p1 = strings.ToLower(p1)
-			p2 = strings.ToLower(p2)
-			if p1 == p2 {
-				fmt.Printf("Player1 : %s \n Player2 : %s \n Match Draw!", p1, p2)
-			} else if p1 == "rock" && p2 == "paper" {
-				fmt.Printf("Player1 : %s \n Player2 : %s \n Player2 Won!", p1, p2)
-			} else if p1 == "paper" && p2 == "rock" {
-				fmt.Printf("Player1 : %s \n Player2 : %s \n Player1 Won!", p1, p2)
-			} else if p1 == "rock" && p2 == "scissor" {
-				fmt.Printf("Player1 : %s \n Player2 : %s \n Player1 Won!", p1, p2)
-			} else if p1 == "scissor" && p2 == "rock" {
-				fmt.Printf("Player1 : %s \n Player2 : %s \n Player2 Won!", p1, p2)
-			} else if p1 == "paper" && p2 == "scissor" {
-				fmt.Printf("Player1 : %s \n Player2 : %s \n Player2 Won!", p1, p2)
-			} else if p1 == "scissor" && p2 == "paper" {
-				fmt.Printf("Player1 : %s \n Player2 : %s \n Player1 Won!", p1, p2)
+			fmt.Print("Enter number of players (2 or 3): ")
+			var num int
+			fmt.Scanln(&num)
+			if num < 2 || num > 3 {
+				fmt.Println("Only 2 or 3 players are allowed.")
+				continue
+			}
+
+			names := make([]string, num)
+			choices := make([]string, num)
+
+			for i := 0; i < num; i++ {
+				fmt.Printf("Enter name for Player %d (leave blank for default): ", i+1)
+				fmt.Scanln(&names[i])
+				if names[i] == "" {
+					names[i] = fmt.Sprintf("Player %d", i+1)
+				}
+				fmt.Printf("%s's choice (rock/paper/scissor): ", names[i])
+				fmt.Scanln(&choices[i])
+				choices[i] = strings.ToLower(choices[i])
+			}
+
+			winner := ""
+			draw := false
+
+			if num == 2 {
+				a, b := choices[0], choices[1]
+				if a == b {
+					draw = true
+				} else if a == "rock" && b == "scissor" || a == "paper" && b == "rock" || a == "scissor" && b == "paper" {
+					winner = names[0]
+				} else {
+					winner = names[1]
+				}
+			} else {
+				a, b, c := choices[0], choices[1], choices[2]
+				if a == b && b == c {
+					draw = true
+				} else if (a == "rock" && b == "scissor" && c == "scissor") ||
+					(a == "paper" && b == "rock" && c == "rock") ||
+					(a == "scissor" && b == "paper" && c == "paper") {
+					winner = names[0]
+				} else if (b == "rock" && a == "scissor" && c == "scissor") ||
+					(b == "paper" && a == "rock" && c == "rock") ||
+					(b == "scissor" && a == "paper" && c == "paper") {
+					winner = names[1]
+				} else if (c == "rock" && a == "scissor" && b == "scissor") ||
+					(c == "paper" && a == "rock" && b == "rock") ||
+					(c == "scissor" && a == "paper" && b == "paper") {
+					winner = names[2]
+				} else {
+					draw = true
+				}
+			}
+
+			for i := 0; i < num; i++ {
+				fmt.Printf("%s: %s\n", names[i], choices[i])
+			}
+
+			if draw {
+				fmt.Println("Result: Draw 🤝")
+			} else {
+				fmt.Printf("Result: %s Won 🎉\n", winner)
 			}
 		}
-		fmt.Println("\nPlay again? (y/n):")
+		fmt.Print("Play again? (y/n): ")
 		fmt.Scanln(&x)
 		x = strings.ToLower(x)
 	}
-		fmt.Println("Hope you enjoyed! :)")
+	fmt.Println("Thanks for playing! 👋")
 }
