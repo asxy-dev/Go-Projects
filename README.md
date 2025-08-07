@@ -92,6 +92,13 @@
 </a>
 </td>
 
+<td align="center">
+<h3>Scramble Game</h3>
+<a href="./scramble-game">
+<img src="https://img.shields.io/badge/View-Project-blue?style=for-the-badge">
+</a>
+</td>
+
 </tr>
 </table>
 
