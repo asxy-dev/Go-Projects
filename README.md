@@ -102,6 +102,10 @@
 </td>
 
 <td align="center">
+<h3>Password Vault</h3>
+<a href="./pass-vault">
+<img src="https://img.shields.io/badge/View-Project-blue?style=for-the-badge">
+</a>
 </td>
 </tr>
 </table>
@@ -127,11 +131,6 @@
 ## 🛠 How to Use
 
 ```bash
-# Clone the repo
 git clone https://github.com/asxy-dev/Go-Projects.git
-
-# Navigate to a project
 cd Go-Projects/calculator
-
-# Run it
 go run main.go
