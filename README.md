@@ -89,7 +89,7 @@
 <tr>
 <td align="center">
 <h3>Guess The Number Game</h3>
-<a href="./guess-the-number-game">
+<a href="./number-guess">
 <img src="https://img.shields.io/badge/View-Project-blue?style=for-the-badge">
 </a>
 </td>
