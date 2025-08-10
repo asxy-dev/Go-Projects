@@ -88,6 +88,13 @@
 
 <tr>
 <td align="center">
+<h3>Guess The Number Game</h3>
+<a href="./guess-the-number-game">
+<img src="https://img.shields.io/badge/View-Project-blue?style=for-the-badge">
+</a>
+</td>
+
+<td align="center">
 <h3>RPS Game</h3>
 <a href="./rock-paper-scissor">
 <img src="https://img.shields.io/badge/View-Project-blue?style=for-the-badge">
@@ -100,7 +107,9 @@
 <img src="https://img.shields.io/badge/View-Project-blue?style=for-the-badge">
 </a>
 </td>
+</tr>
 
+<tr>
 <td align="center">
 <h3>Password Vault</h3>
 <a href="./pass-vault">
