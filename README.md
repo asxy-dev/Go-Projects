@@ -49,21 +49,28 @@
 </td>
 
 <td align="center">
-<h3>File Manager</h3>
-<a href="./file-manager">
+<h3>Face Maker</h3>
+<a href="./face-maker">
 <img src="https://img.shields.io/badge/View-Project-blue?style=for-the-badge">
 </a>
 </td>
 
 <td align="center">
-<h3>Patterns</h3>
-<a href="./patterns">
+<h3>File Manager</h3>
+<a href="./file-manager">
 <img src="https://img.shields.io/badge/View-Project-blue?style=for-the-badge">
 </a>
 </td>
 </tr>
 
 <tr>
+<td align="center">
+<h3>Patterns</h3>
+<a href="./patterns">
+<img src="https://img.shields.io/badge/View-Project-blue?style=for-the-badge">
+</a>
+</td>
+
 <td align="center">
 <h3>Strength Checker</h3>
 <a href="./strength-checker">
@@ -77,16 +84,16 @@
 <img src="https://img.shields.io/badge/View-Project-blue?style=for-the-badge">
 </a>
 </td>
+</tr>
 
+<tr>
 <td align="center">
 <h3>User Validator</h3>
 <a href="./user-validator">
 <img src="https://img.shields.io/badge/View-Project-blue?style=for-the-badge">
 </a>
 </td>
-</tr>
 
-<tr>
 <td align="center">
 <h3>Guess The Number Game</h3>
 <a href="./number-guess">
@@ -100,16 +107,16 @@
 <img src="https://img.shields.io/badge/View-Project-blue?style=for-the-badge">
 </a>
 </td>
+</tr>
 
+<tr>
 <td align="center">
 <h3>Scramble Game</h3>
 <a href="./scramble-game">
 <img src="https://img.shields.io/badge/View-Project-blue?style=for-the-badge">
 </a>
 </td>
-</tr>
 
-<tr>
 <td align="center">
 <h3>Password Vault</h3>
 <a href="./pass-vault">
@@ -140,6 +147,11 @@
 ## 🛠 How to Use
 
 ```bash
+# 1️⃣ Clone the repository
 git clone https://github.com/asxy-dev/Go-Projects.git
-cd Go-Projects/calculator
+
+# 2️⃣ Go into a specific project folder (Example: Face Maker)
+cd Go-Projects/face-maker
+
+# 3️⃣ Run the Go program
 go run main.go
