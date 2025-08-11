@@ -50,7 +50,7 @@
 
 <td align="center">
 <h3>Face Maker</h3>
-<a href="./face-maker">
+<a href="./emoji-face">
 <img src="https://img.shields.io/badge/View-Project-blue?style=for-the-badge">
 </a>
 </td>
@@ -150,8 +150,8 @@
 # 1️⃣ Clone the repository
 git clone https://github.com/asxy-dev/Go-Projects.git
 
-# 2️⃣ Go into a specific project folder (Example: Face Maker)
-cd Go-Projects/face-maker
+# 2️⃣ Go into a specific project folder (Example: Emoji Face)
+cd Go-Projects/emoji-face
 
 # 3️⃣ Run the Go program
 go run main.go
