@@ -49,8 +49,8 @@
 </td>
 
 <td align="center">
-<h3>Face Maker</h3>
-<a href="./emoji-face">
+<h3>Food Picker</h3>
+<a href="./food-picker">
 <img src="https://img.shields.io/badge/View-Project-blue?style=for-the-badge">
 </a>
 </td>
@@ -150,8 +150,8 @@
 # 1️⃣ Clone the repository
 git clone https://github.com/asxy-dev/Go-Projects.git
 
-# 2️⃣ Go into a specific project folder (Example: Emoji Face)
-cd Go-Projects/emoji-face
+# 2️⃣ Go into a specific project folder (Example: Food Picker)
+cd Go-Projects/food-picker
 
 # 3️⃣ Run the Go program
 go run main.go
