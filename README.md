@@ -65,6 +65,13 @@
 
 <tr>
 <td align="center">
+<h3>ATM Simulator</h3>
+<a href="./atm-simul">
+<img src="https://img.shields.io/badge/View-Project-blue?style=for-the-badge">
+</a>
+</td>
+
+<td align="center">
 <h3>Patterns</h3>
 <a href="./patterns">
 <img src="https://img.shields.io/badge/View-Project-blue?style=for-the-badge">
@@ -77,16 +84,16 @@
 <img src="https://img.shields.io/badge/View-Project-blue?style=for-the-badge">
 </a>
 </td>
+</tr>
 
+<tr>
 <td align="center">
 <h3>To-Do List</h3>
 <a href="./to-do-list">
 <img src="https://img.shields.io/badge/View-Project-blue?style=for-the-badge">
 </a>
 </td>
-</tr>
 
-<tr>
 <td align="center">
 <h3>User Validator</h3>
 <a href="./user-validator">
@@ -100,16 +107,16 @@
 <img src="https://img.shields.io/badge/View-Project-blue?style=for-the-badge">
 </a>
 </td>
+</tr>
 
+<tr>
 <td align="center">
 <h3>RPS Game</h3>
 <a href="./rock-paper-scissor">
 <img src="https://img.shields.io/badge/View-Project-blue?style=for-the-badge">
 </a>
 </td>
-</tr>
 
-<tr>
 <td align="center">
 <h3>Scramble Game</h3>
 <a href="./scramble-game">
@@ -150,8 +157,8 @@
 # 1️⃣ Clone the repository
 git clone https://github.com/asxy-dev/Go-Projects.git
 
-# 2️⃣ Go into a specific project folder (Example: Food Picker)
-cd Go-Projects/food-picker
+# 2️⃣ Go into a specific project folder (Example: ATM Simulator)
+cd Go-Projects/atm-simul
 
 # 3️⃣ Run the Go program
 go run main.go
