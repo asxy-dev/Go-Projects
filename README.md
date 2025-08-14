@@ -131,6 +131,17 @@
 </a>
 </td>
 </tr>
+
+<tr>
+<td align="center">
+<h3>Fighting Simulator</h3>
+<a href="./fighting-simulator">
+<img src="https://img.shields.io/badge/View-Project-blue?style=for-the-badge">
+</a>
+</td>
+<td></td>
+<td></td>
+</tr>
 </table>
 
 </div>
