@@ -1,3 +1,7 @@
+// code written by asxy
+// discord : asxy.dev
+// day 16
+
 package main
 
 import (
