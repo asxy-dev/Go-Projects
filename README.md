@@ -139,7 +139,14 @@
 <img src="https://img.shields.io/badge/View-Project-blue?style=for-the-badge">
 </a>
 </td>
-<td></td>
+
+<td align="center">
+<h3>75 Day Hard Challenge</h3>
+<a href="./75day-hard">
+<img src="https://img.shields.io/badge/View-Project-blue?style=for-the-badge">
+</a>
+</td>
+
 <td></td>
 </tr>
 </table>
@@ -168,8 +175,8 @@
 # 1️⃣ Clone the repository
 git clone https://github.com/asxy-dev/Go-Projects.git
 
-# 2️⃣ Go into a specific project folder (Example: ATM Simulator)
-cd Go-Projects/atm-simul
+# 2️⃣ Go into a specific project folder (Example: 75 Day Hard Challenge)
+cd Go-Projects/75day-hard
 
 # 3️⃣ Run the Go program
 go run main.go
