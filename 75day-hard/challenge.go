@@ -1,6 +1,7 @@
 // code written by asxy
 // discord : asxy.dev
 // day 16
+// daily streakkkk less gooo
 
 package main
 
